@@ -9,10 +9,8 @@ Simple, production-ish Airflow project:
 
 ## 1) Requirements
 - AWS account + S3 bucket (e.g., `my-etl-bucket`)
-- EC2 Ubuntu 22.04 with IAM role granting:
-  - s3:ListBucket on your bucket
-  - s3:GetObject, s3:PutObject on `arn:aws:s3:::<bucket>/*`
-- Security group: SSH (22) from your IP only
+- EC2 Ubuntu 22.04 with IAM role.
+- Security group: SSH (22) from own IP only
 
 ## 2) Bootstrap EC2
 ```bash

@@ -1,7 +1,5 @@
 # airflow-etl
-# Employee ETL on Airflow (CSV → S3)
 
-Simple, production-ish Airflow project:
 - Input: `employee_raw_data.csv` (dirty)
 - Transform: Python (clean, dedupe, split clean/rejects, metrics)
 - Output (CSV only) → S3 partitioned by `dt={{ ds }}`:

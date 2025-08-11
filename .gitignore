@@ -1,1 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.airflow/
+logs/
+airflow/
+# macOS/Windows cruft
+.DS_Store
+Thumbs.db
 

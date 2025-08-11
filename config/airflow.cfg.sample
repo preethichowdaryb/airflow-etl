@@ -1,1 +1,6 @@
+[core]
+load_examples = False
+executor = LocalExecutor
 
+[logging]
+remote_logging = False

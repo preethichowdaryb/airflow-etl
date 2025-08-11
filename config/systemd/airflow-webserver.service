@@ -1,1 +1,13 @@
+[Unit]
+Description=Airflow Webserver
+After=network.target
+
+[Service]
+Environment=AIRFLOW_HOME=/home/ubuntu/airflow
+ExecStart=/home/ubuntu/venv/bin/airflow webserver -p 8080
+User=ubuntu
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
 
